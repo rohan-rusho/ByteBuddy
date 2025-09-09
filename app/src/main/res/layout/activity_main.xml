@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg_background">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ByteBuddy"
+        android:textSize="32sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert Storage Units Instantly"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_input"
+        android:textColor="#000000"
+        android:textColorHint="#6F6F6F"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- From Unit Spinner -->
+    <Spinner
+        android:id="@+id/fromUnitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/blue_gradient"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"/>
+
+    <!-- To Unit Spinner -->
+    <Spinner
+        android:id="@+id/toUnitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/blue_gradient"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"/>
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚡ Convert"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3B82F6"
+        android:padding="16dp"
+        app:cornerRadius="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Result Box -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/restart"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Converted value will appear here"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Copy Button -->
+    <Button
+        android:id="@+id/copyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Copy Result"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6D00"
+        android:padding="16dp"
+        app:cornerRadius="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Share Button -->
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📤 Share Result"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00A070"
+        android:padding="16dp"
+        app:cornerRadius="16dp"/>
+
+</LinearLayout>
